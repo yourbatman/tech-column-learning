@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cn.yourbatman</groupId>
+    <artifactId>tech-column-learning</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>cors</module>
+    </modules>
+    <packaging>pom</packaging>
+    <description>技术专栏代码示例（路径：原生环境 -> Spring Framework环境 -> Spring Boot环境）</description>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <spring-boot-dependencies>2.5.0</spring-boot-dependencies>
+    </properties>
+
+    <developers>
+        <developer>
+            <name>YourBatman</name>
+            <email>yourbatman@aliyun.com</email>
+            <url>https://yourbatman.cn</url>
+            <timezone>+8</timezone>
+        </developer>
+    </developers>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--引入Spring Boot的bom进行帮助【依赖管理】-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot-dependencies}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- 该插件是为了没有web.xml情况下，打war包。编译不要报错 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.1</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+            </plugin>
+        </plugins>
+
+        <!--
+             directory：属性指定资源文件放置的目录。
+             includes：包含哪些配置文件（.class文件不用写）
+             filtering：如果设置为false的话，则表示上文的filters配置失效；如果设置为true，则会根据${env}.properties里面的键值对来
+                        填充includes指定文件里的${xxxx}占位符（若不做环境区分，一般就是false即可）
+         -->
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                    <include>**/*.tld</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+    </build>
+
+</project>

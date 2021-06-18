@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cookie交互机制（跨域）</title>
+    <!--导入Jquery-->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+</head>
+<body>
+<button id="btn">Cookie交互机制（跨域）</button>
+<div id="content"></div>
+
+<script>
+    $("#btn").click(function () {
+        // $.get("http://localhost:8080/corscookie");
+
+        $.ajax({
+            url: "http://localhost:8080/corscookie",
+            type: "GET",
+            xhrFields: {
+                withCredentials: true
+            },
+            crossDomain: true
+        });
+    });
+</script>
+</body>
+</html>

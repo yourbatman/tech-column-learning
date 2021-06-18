@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cookie交互机制（同域）</title>
+    <!--导入Jquery-->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+</head>
+<body>
+<button id="btn">Cookie交互机制（同域）</button>
+<div id="content"></div>
+
+<script>
+    $("#btn").click(function () {
+        $.get("http://localhost:8080/cookie", function (result) {
+            $("#content").append(result).append("<br/>");
+        });
+    });
+</script>
+</body>
+</html>

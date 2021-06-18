@@ -1,0 +1,40 @@
+﻿# Contact me if any problem occurred. mailto:yourbatman@aliyun.com | https://yourbatman.cn
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+### eclipse/STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+### VS Code ###
+.vscode/
+
+### temp ignore ###
+*.orig
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp

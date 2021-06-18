@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSONP跨域请求</title>
+    <!--导入Jquery-->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+</head>
+<body>
+<!--<script>-->
+<!--    // 请求完成后会回调此函数-->
+<!--    function jsonpCallback(result) {-->
+<!--        console.log("这是JSONP请求的响应结果：" + result);-->
+<!--    }-->
+<!--</script>-->
+<!--&lt;!&ndash;注：这个script必须放在上面function的下面&ndash;&gt;-->
+<!--<script type="text/javascript" src="http://localhost:8080/jsonp?callback=jsonpCallback"></script>-->
+<script>
+    $.ajax({
+        type: "get",
+        url: "http://localhost:8080/jsonp",
+        dataType: 'jsonp',
+        success: function (data) {
+            console.log("这是JSONP请求的响应结果（jQuery Ajax）：" + data);
+        },
+    });
+</script>
+</body>
+</html>

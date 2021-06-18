@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多Origin响应CORS跨域请求</title>
+    <!--导入Jquery-->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+</head>
+<body>
+<button id="btn">多Origin响应CORS跨域请求</button>
+<div id="content"></div>
+
+<script>
+    $("#btn").click(function () {
+        // 跨域请求
+        $.get("http://localhost:8080/multiple_origins_cors", function (result) {
+            $("#content").append(result).append("<br/>");
+        });
+    });
+</script>
+</body>
+</html>
