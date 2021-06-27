@@ -3,22 +3,27 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>cors</artifactId>
+        <artifactId>tech-column-learning</artifactId>
         <groupId>cn.yourbatman</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>spring-framework</artifactId>
+    <artifactId>spring5</artifactId>
+    <packaging>pom</packaging>
+    <description>这是针对Spring 5提供的一些特殊新功能的工程</description>
+    <modules>
+        <module>spring5-java</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>jakarta.servlet</groupId>
-            <artifactId>jakarta.servlet-api</artifactId>
-            <scope>provided</scope>
+            <artifactId>spring-core</artifactId>
         </dependency>
     </dependencies>
 
