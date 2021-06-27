@@ -38,3 +38,6 @@ build/
 *.diff
 *.patch
 *.tmp
+
+### for project ###
+directoryList.md
