@@ -75,3 +75,6 @@
 
 ### 期待与你相遇
 喜欢交朋友，喜欢讨论技术，更喜欢向你学习。<img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60">期待在程序的世界里我们能相遇！
+
+---
+*由于作者水平有限，可能存在描述不准确或错别字内容，👏🏻欢迎随时反馈给我。我是YourBatman，一个纯粹技术工！*
