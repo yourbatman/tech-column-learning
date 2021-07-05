@@ -28,7 +28,7 @@
 | 序号 | 专栏简介                                     |                 链接（PC阅读）                    |                 链接（公众号阅读）                    |
 | :--: | --------------------------------------------- | --------------------------------------------- | --------------------------------------------- |
 | 17 | 从Java EE到Jakarta EE，三十年弹指一挥间 | [BATutopia-java-ee](https://github.com/yourbatman/BATutopia-java-ee) | [BATutopia-Java EE](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI0MTUwOTgyOQ==&action=getalbum&album_id=1940957171895058444#wechat_redirect) |
-| 18 | [待归档...]() | [待归档...]()| [待归档...]() |
+| 18 | 待归档... | 待归档... | 待归档... |
 
 
 > Tips：关注公众号【BAT的乌托邦】，后台回复专栏对应的序号，会有更详尽的归档惊喜哦
