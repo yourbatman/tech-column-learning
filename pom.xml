@@ -11,16 +11,20 @@
         <module>cors</module>
         <module>spring5</module>
         <module>foundation</module>
+        <module>javaee</module>
     </modules>
     <packaging>pom</packaging>
-    <description>技术专栏代码示例（路径：原生环境 -> Spring Framework环境 -> Spring Boot环境）</description>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <spring-boot-dependencies>2.5.1</spring-boot-dependencies>
+        <spring-boot-dependencies>2.5.2</spring-boot-dependencies>
     </properties>
 
+    <organization>
+        <name>BAT的乌托邦</name>
+        <url>https://yourbatman.cn</url>
+    </organization>
     <developers>
         <developer>
             <name>YourBatman</name>
@@ -79,7 +83,6 @@
                 <version>3.8.1</version>
             </plugin>
         </plugins>
-
         <!--
              directory：属性指定资源文件放置的目录。
              includes：包含哪些配置文件（.class文件不用写）

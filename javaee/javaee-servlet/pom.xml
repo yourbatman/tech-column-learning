@@ -3,22 +3,25 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>tech-column-learning</artifactId>
+        <artifactId>javaee</artifactId>
         <groupId>cn.yourbatman</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>foundation</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>foundation-java</module>
-        <module>foundation-spring-framework</module>
-        <module>foundation-spring-boot</module>
-    </modules>
+        <packaging>war</packaging>
+    <artifactId>javaee-servlet</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 
 </project>
