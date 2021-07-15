@@ -71,6 +71,7 @@
 - 公众号：[BAT的乌托邦](https://yourbatman.cn/image/BAT-utopia-12cm.png)
 - 我的站点：[https://yourbatman.cn](https://yourbatman.cn)
 - 我的网盘：[https://wangpan.yourbatman.cn](https://wangpan.yourbatman.cn)
+   - 用邮箱注册送1G超小容量，助你做减法（为什么要做减法？读这里：[做加法容易做减法难，程序员的我深有同感](https://yourbatman.cn/x2y/89616c6e.html)）
 
 ![BAT的乌托邦-搜一搜](https://img-blog.csdnimg.cn/20200511100304554.png)
 
