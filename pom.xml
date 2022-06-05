@@ -12,13 +12,14 @@
         <module>spring5</module>
         <module>foundation</module>
         <module>javaee</module>
+        <module>basicskill</module>
     </modules>
     <packaging>pom</packaging>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <spring-boot-dependencies>2.5.2</spring-boot-dependencies>
+        <spring-boot-dependencies>2.7.0</spring-boot-dependencies>
     </properties>
 
     <organization>
@@ -44,6 +45,16 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>2.11.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.12.0</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -54,7 +65,12 @@
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>

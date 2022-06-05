@@ -13,7 +13,7 @@
     <modules>
         <module>foundation-java</module>
         <module>foundation-spring-framework</module>
-        <module>foundation-spring-boot</module>
+        <module>foundation-springboot</module>
     </modules>
 
     <properties>
